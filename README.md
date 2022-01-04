@@ -37,8 +37,8 @@ optional arguments:
 
 **Input File:** It allow users to provide input in two format; i) FASTA format (standard) and ii) Simple Format. In case of simple format, file should have one peptide sequence in a single line in single letter code (eg. peptide.seq). 
 **Note:**
-1: In case of predict and design module (job), the length of peptide should be upto 35 amino acids. If a sequence with length more than 35 will be provided, program willtake first 35 residues, and ignore the rest. In case of scan module, minimum length of protein/peptide sequence should be more than or equal to window length (pattern), see peptide.fa.
-2: Program will ignore peptides having length less than 8 residues (e.g., protein.fa).
+<br> 1: In case of predict and design module (job), the length of peptide should be upto 35 amino acids. If a sequence with length more than 35 will be provided, program willtake first 35 residues, and ignore the rest. In case of scan module, minimum length of protein/peptide sequence should be more than or equal to window length (pattern), see peptide.fa.
+<br> 2: Program will ignore peptides having length less than 8 residues (e.g., protein.fa).
 
 **Output File:** Program will save the results in the CSV format, in case user do not provide output file name, it will be stored in "outfile.csv".
 
@@ -47,7 +47,7 @@ optional arguments:
 
 ### IL13Pred Package Files
 =======================
-Brief description of the files included is given below:
+<br> Brief description of the files included is given below:
 
 * INSTALLATION  			: Installations instructions
 
