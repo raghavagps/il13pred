@@ -10,16 +10,16 @@ IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 
 
 * Full Usage: Following is complete list of all options, you may get these options by "python il13pred.py -h" 
 
-* usage: il13pred.py [-h] -i INPUT 
-      [-o OUTPUT]
+usage: il13pred.py [-h] -i INPUT 
+		        [-o OUTPUT]
 			[-j {1,2,3}]
 			[-t THRESHOLD] 
 			[-w {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35}] 
 			[-d {1,2}]
 
-* Please provide following arguments
+Please provide following arguments
 
-* optional arguments:
+optional arguments:
   -h, --help            ##show this help message and exit
   -i INPUT, --input INPUT
                         ##Input: protein or peptide sequence in FASTA format or single sequence per line in single letter code
@@ -45,30 +45,30 @@ IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 
 **Threshold:** User should provide threshold between 0 and 1, please note that the score is propotional to interleukin-13 inducing potential of peptide.
 
 
-IL13Pred Package Files
+### IL13Pred Package Files
 =======================
-It contantain following files, brief descript of these files given below
+Brief description of the files included is given below:
 
-INSTALLATION  			: Installations instructions
+* INSTALLATION  			: Installations instructions
 
-LICENSE       			: License information
+* LICENSE       			: License information
 
-README.md     			: This file provide information about this package
+* README.md     			: This file provide information about this package
 
-XGB_model       		: Model file comprising the parameters of XGB classifier
+* XGB_model       		: Model file comprising the parameters of XGB classifier
 
-il13pred.py 			: Main python program 
+* il13pred.py 			: Main python program 
 
-peptide.fa			: Example file contain peptide sequenaces in FASTA format
+* peptide.fa			: Example file contain peptide sequenaces in FASTA format
 
-peptide.seq			: Example file contain peptide sequenaces in simple format
+* peptide.seq			: Example file contain peptide sequenaces in simple format
 
-protein.fa			: Example file contain protein sequenaces in FASTA format 
+* protein.fa			: Example file contain protein sequenaces in FASTA format 
 
-example_predict_output.csv	: Example output file for predict module
+* example_predict_output.csv	: Example output file for predict module
 
-example_scan_output.csv		: Example output file for scan module
+* example_scan_output.csv		: Example output file for scan module
 
-example_design_output.csv	: Example output file for design module
+* example_design_output.csv	: Example output file for design module
 
-Data            		: This folder contains the files required to run the in-built python scripts.
+* Data            		: This folder contains the files required to run the in-built python scripts.
