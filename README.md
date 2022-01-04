@@ -18,7 +18,8 @@ IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 
 		<br>	*[-d {1,2}]*
 
 ***optional arguments:***
- <br> -h, --help            show this help message and exit
+ <br> -h,   
+ <br> *--help  ###show help message and exit.*
  <br> -i INPUT, --input INPUT
                         Input: protein or peptide sequence in FASTA format or single sequence per line in single letter code
   <br> -o OUTPUT, --output OUTPUT
@@ -34,8 +35,9 @@ IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 
                         Display: 1:Interleukin-13 inducing peptide, 2: All peptides, by default 1
 
 
-**Input File:** It allow users to provide input in two format; i) FASTA format (standard) and ii) Simple Format. In case of simple format, file should have one peptide sequence in a single line in single letter code (eg. peptide.seq). 
-**Note:**
+<br> **Input File:** It allow users to provide input in two format; i) FASTA format (standard) and ii) Simple Format. In case of simple format, file should have one peptide sequence in a single line in single letter code (eg. peptide.seq). 
+
+<br> **Note:**
 <br> 1: In case of predict and design module (job), the length of peptide should be upto 35 amino acids. If a sequence with length more than 35 will be provided, program willtake first 35 residues, and ignore the rest. In case of scan module, minimum length of protein/peptide sequence should be more than or equal to window length (pattern), see peptide.fa.
 <br> 2: Program will ignore peptides having length less than 8 residues (e.g., protein.fa).
 
