@@ -1,0 +1,6 @@
+# Sequence_ID, Sequence, Prediction, Score
+>seq1,RLPIVLNLVNRALA,IL-13 inducer,0.09
+>seq2,QGTLSKIFKLGGRDSR,IL-13 non-inducer,0.04
+>seq3,SGIPYIISYLHPG,IL-13 inducer,0.07
+>seq4,DPYYDPTSSPSEIGP,IL-13 non-inducer,0.02
+>seq5,DTTVAPAGTQAIIDT,IL-13 non-inducer,0.02
