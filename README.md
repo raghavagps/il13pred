@@ -2,36 +2,35 @@
 ## Introduction
 IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 inducing peptides. More information on IL13Pred is available from its web-server https://webs.iiitd.edu.in/raghava/il13pred/stand.html. This page provides information about stnadalone version of IL13Pred. Please read/cite the content about the IL13Pred for complete information including algorithm behind IL13Pred.
 
-* Models: In this program, one model has been incorporated for predicting interleukin-13 inducing peptides. The model is trained on IL-13 inducing and non-inducing peptides.
+**Models:** In this program, one model has been incorporated for predicting interleukin-13 inducing peptides. The model is trained on IL-13 inducing and non-inducing peptides.
 
-* Modules/Jobs: This program implements three modules (job types); i) Predict: for predictin of interleukin-13 inducing peptides, ii) Design: for generating all possible mutant peptides and computing interleukin-13 inducing potential (score) of peptides, iii) Scan: for creating all possible overlapping peptides of given length (window) and computing interleukin-13 inducing potential (score) of these overlapping peptides.
+**Modules/Jobs:** This program implements three modules (job types); i) Predict: for predictin of interleukin-13 inducing peptides, ii) Design: for generating all possible mutant peptides and computing interleukin-13 inducing potential (score) of peptides, iii) Scan: for creating all possible overlapping peptides of given length (window) and computing interleukin-13 inducing potential (score) of these overlapping peptides.
 
-* Minimum USAGE: Minimum usage is "python il13pred.py -i peptide.fa," where peptide.fa is a input fasta file. This will predict the interleukin-13 inducing potential of sequence  in fasta format. It will use other parameters by default. It will save output in "outfile.csv" in CSV (comma seperated variables).
+**Minimum USAGE:** Minimum usage is "python il13pred.py -i peptide.fa," where peptide.fa is a input fasta file. This will predict the interleukin-13 inducing potential of sequence  in fasta format. It will use other parameters by default. It will save output in "outfile.csv" in CSV (comma seperated variables).
 
-* Full Usage: Following is complete list of all options, you may get these options by "python il13pred.py -h" 
+**Full Usage:** Following is complete list of all options, you may get these options by "python il13pred.py -h" 
 
-usage: il13pred.py [-h] -i INPUT 
-		        [-o OUTPUT]
-			[-j {1,2,3}]
-			[-t THRESHOLD] 
-			[-w {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35}] 
-			[-d {1,2}]
+***Usage:*** *il13pred.py [-h] -i INPUT* 
+		<br>    *[-o OUTPUT]*
+		<br>	*[-j {1,2,3}]*
+		<br>	*[-t THRESHOLD]* 
+		<br>	*[-w {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35}]* 
+		<br>	*[-d {1,2}]*
 
-Please provide following arguments
-
-optional arguments:
-  -h, --help            ##show this help message and exit
-  -i INPUT, --input INPUT
-                        ##Input: protein or peptide sequence in FASTA format or single sequence per line in single letter code
-  -o OUTPUT, --output OUTPUT
+***optional arguments:***
+ <br> -h, --help            show this help message and exit
+ <br> -i INPUT, --input INPUT
+                        Input: protein or peptide sequence in FASTA format or single sequence per line in single letter code
+  <br> -o OUTPUT, --output OUTPUT
                         Output: File for saving results by default outfile.csv
-  -j {1,2,3}, --job {1,2,3}
+  <br> -j {1,2,3}, --job {1,2,3}
                         Job Type: 1:predict, 2:design and 3:scan, by default 1
-  -t THRESHOLD, --threshold THRESHOLD
+ <br> -t THRESHOLD, --threshold THRESHOLD
                         Threshold: Value between 0 to 1 by default 0.06
-  -w {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35}, --winleng {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35}
+ <br> -w {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35},
+ <br> --winleng {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35}
                         Window Length: 8 to 35 (scan mode only), by default 9
-  -d {1,2}, --display {1,2}
+  <br> -d {1,2}, --display {1,2}
                         Display: 1:Interleukin-13 inducing peptide, 2: All peptides, by default 1
 
 
@@ -45,7 +44,7 @@ optional arguments:
 **Threshold:** User should provide threshold between 0 and 1, please note that the score is propotional to interleukin-13 inducing potential of peptide.
 
 
-### IL13Pred Package Files
+## IL13Pred Package Files
 =======================
 <br> Brief description of the files included is given below:
 
@@ -70,5 +69,4 @@ optional arguments:
 * example_scan_output.csv		: Example output file for scan module
 
 * example_design_output.csv	: Example output file for design module
-
-* Data            		: This folder contains the files required to run the in-built python scripts.
+            	
