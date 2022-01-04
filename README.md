@@ -17,19 +17,17 @@ IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 
 		<br>	*[-w {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35}]* 
 		<br>	*[-d {1,2}]*
 
-***optional arguments:***
+***Arguments Description:***
  <br> -h,   *--help: show help message and exit.*
  <br> -i INPUT, *--input: protein or peptide sequence in FASTA format or single sequence per line in single letter code.*
   <br> -o OUTPUT, *--output: File for saving results by default outfile.csv.*
-  <br> -j {1,2,3}, *--Job Type: 1:predict, 2:design and 3:scan, by default 1.*
+  <br> -j, *--Job Type: 1:predict, 2:design and 3:scan, by default 1.*
  <br> -t THRESHOLD, *--Threshold: Value between 0 to 1 by default 0.06.*
- <br> -w {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35},
- <br> --winleng {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35}
-                        *--Window Length: 8 to 35 (scan mode only), by default 9.*
-  <br> -d {1,2}, *--Display: 1:Interleukin-13 inducing peptide, 2: All peptides, by default 1*
+ <br> -w, or --winleng, *--Window Length: 8 to 35 (scan mode only), by default 9.*
+  <br> -d, *--Display: 1:Interleukin-13 inducing peptide, 2: All peptides, by default 1*
 
 
-<br> **Input File:** It allow users to provide input in two format; i) FASTA format (standard) and ii) Simple Format. In case of simple format, file should have one peptide sequence in a single line in single letter code (eg. peptide.seq). 
+**Input File:** It allow users to provide input in two format; i) FASTA format (standard) and ii) Simple Format. In case of simple format, file should have one peptide sequence in a single line in single letter code (eg. peptide.seq). 
 
 <br> **Note:**
 <br> 1: In case of predict and design module (job), the length of peptide should be upto 35 amino acids. If a sequence with length more than 35 will be provided, program willtake first 35 residues, and ignore the rest. In case of scan module, minimum length of protein/peptide sequence should be more than or equal to window length (pattern), see peptide.fa.
