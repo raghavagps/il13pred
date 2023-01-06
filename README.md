@@ -1,6 +1,6 @@
 # **IL13Pred**
 ## Introduction
-IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 inducing peptides. More information on IL13Pred is available from its web-server https://webs.iiitd.edu.in/raghava/il13pred/stand.html. This page provides information about stnadalone version of IL13Pred. Please read/cite the content about the IL13Pred for complete information including algorithm behind IL13Pred.
+IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 inducing peptides. More information on IL13Pred is available from its web-server https://webs.iiitd.edu.in/raghava/il13pred/. This page provides information about stnadalone version of IL13Pred. Please read/cite the content about the IL13Pred for complete information including algorithm behind IL13Pred.
 
 **Models:** In this program, one model has been incorporated for predicting interleukin-13 inducing peptides. The model is trained on IL-13 inducing and non-inducing peptides.
 
@@ -65,3 +65,6 @@ IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 
 
 * example_design_output.csv	: Example output file for design module
             	
+# Reference
+ain S., Dhall A., Patiyal S. and Raghava G.P.S. (2022) IL13Pred: A method for predicting immunoregulatory cytokine IL-13 inducing peptides.
+<a href="https://pubmed.ncbi.nlm.nih.gov/35152041/">Computers in Biology and Medicine, 2022: 05297.</a>
