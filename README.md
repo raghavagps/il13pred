@@ -1,7 +1,16 @@
-# **IL13Pred**
+# IL13Pred: In silico method for designing IL-13 inducing peptides
 ## Introduction
 IL13Pred is developed for predicting, desiging, and scanning the interleukin-13 inducing peptides. More information on IL13Pred is available from its web-server https://webs.iiitd.edu.in/raghava/il13pred/ . This page provides information about stnadalone version of IL13Pred. Please read/cite the content about the IL13Pred for complete information including algorithm behind IL13Pred.
 
+## Pip installation
+The pip version of IL13pred is also available for easy installation and usage of the tool. The following command is required to install the package 
+```
+pip install il13pred
+```
+To know about the available option for the pip package, type the following command:
+```
+il13pred -h
+```
 **Models:** In this program, one model has been incorporated for predicting interleukin-13 inducing peptides. The model is trained on IL-13 inducing and non-inducing peptides.
 
 **Modules/Jobs:** This program implements three modules (job types); i) Predict: for predictin of interleukin-13 inducing peptides, ii) Design: for generating all possible mutant peptides and computing interleukin-13 inducing potential (score) of peptides, iii) Scan: for creating all possible overlapping peptides of given length (window) and computing interleukin-13 inducing potential (score) of these overlapping peptides.
