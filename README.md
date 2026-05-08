@@ -82,3 +82,6 @@ il13pred -h
 # Reference
 Jain S., Dhall A., Patiyal S. and Raghava G.P.S. (2022) IL13Pred: A method for predicting immunoregulatory cytokine IL-13 inducing peptides.
 <a href="https://pubmed.ncbi.nlm.nih.gov/35152041/">Computers in Biology and Medicine, 2022: 05297.</a>
+
+# Zenodo
+https://doi.org/10.5281/zenodo.20033632
